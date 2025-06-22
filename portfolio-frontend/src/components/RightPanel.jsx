@@ -21,7 +21,7 @@ const RightPanel = () => {
           <FaCode className="icon" />
           Enlaces
         </h3>
-        <a href="https://github.com/fabiancerpa" target="_blank" rel="noopener noreferrer" className="link">
+        <a href="https://github.com/fi-gc/portfolio-fabian-cerpa" target="_blank" rel="noopener noreferrer" className="link">
           <FaGithub />
           GitHub
         </a>

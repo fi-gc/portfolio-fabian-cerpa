@@ -18,9 +18,9 @@ const Snippets = ({ selectedTech }) => {
   const timeoutRef = useRef(null);
   const intervalRef = useRef(null);
 
-  const fetchSnippets = async () => {
+  const fetchSnippets = async (isBackground = false) => {
     try {
-      setLoading(true);
+      if (!isBackground) setLoading(true);
       const response = await axios.get('http://localhost:8080/api/snippets');
       console.log('Datos recibidos de la API:', response.data);
       if (response.data.length > 0) {
@@ -28,19 +28,17 @@ const Snippets = ({ selectedTech }) => {
         console.log('Campos disponibles:', Object.keys(response.data[0]));
       }
       setSnippets(response.data);
-      setLoading(false);
+      if (!isBackground) setLoading(false);
     } catch (error) {
       console.error('Error fetching snippets:', error);
-      setLoading(false);
+      if (!isBackground) setLoading(false);
     }
   };
 
   useEffect(() => {
     fetchSnippets();
-    
-    // Configurar recarga automática cada 1 minuto
-    intervalRef.current = setInterval(fetchSnippets, 10000);
-    
+    // Configurar recarga automática cada 30 minutos en segundo plano
+    intervalRef.current = setInterval(() => fetchSnippets(true), 1800000);
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
