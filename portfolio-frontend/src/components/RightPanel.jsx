@@ -78,7 +78,7 @@ const RightPanel = () => {
           Documentación API
         </h3>
         <a 
-          href="http://localhost:8080/swagger-ui.html" 
+          href={`${import.meta.env.VITE_API_URL}/swagger-ui.html`} 
           target="_blank" 
           rel="noopener noreferrer" 
           className="link"

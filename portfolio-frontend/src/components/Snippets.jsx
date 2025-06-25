@@ -5,6 +5,8 @@ import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
 import "../styles/Snippets.css";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const Snippets = ({ selectedTech }) => {
   const [snippets, setSnippets] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -21,7 +23,7 @@ const Snippets = ({ selectedTech }) => {
   const fetchSnippets = async (isBackground = false) => {
     try {
       if (!isBackground) setLoading(true);
-      const response = await axios.get('http://localhost:8080/api/snippets');
+      const response = await axios.get(`${API_URL}/api/snippets`);
       console.log('Datos recibidos de la API:', response.data);
       if (response.data.length > 0) {
         console.log('Estructura del primer snippet:', response.data[0]);
