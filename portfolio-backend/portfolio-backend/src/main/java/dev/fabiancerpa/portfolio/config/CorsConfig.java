@@ -21,7 +21,8 @@ public class CorsConfig {
                             "https://portfolio-fabian-cerpa-production.up.railway.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
+                        .exposedHeaders("*");
             }
         };
     }
