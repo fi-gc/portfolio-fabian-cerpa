@@ -46,7 +46,7 @@ const RightPanel = () => {
             <span className="document-name">Curriculum Vitae</span>
             <span className="document-type">PDF</span>
           </div>
-          <a className="download-link" href="/CV.pdf" download>
+          <a className="download-link" href="/Fabian_Cerpa_CV.pdf" download>
             <FaDownload />
           </a>
         </div>
@@ -56,17 +56,17 @@ const RightPanel = () => {
             <span className="document-name">Certificado de Título</span>
             <span className="document-type">PDF</span>
           </div>
-          <a className="download-link" href="/CT.pdf" download>
+          <a className="download-link" href="/Certificado_Titulo_Ingeniero_Informatica_Fabian_Cerpa.pdf" download>
             <FaDownload />
           </a>
         </div>
         <div className="document-item">
           <FaFileAlt className="document-icon" />
           <div className="document-info">
-            <span className="document-name">Diplomado Python</span>
+            <span className="document-name">Diplomado Python y Ciencia de Datos</span>
             <span className="document-type">PDF</span>
           </div>
-          <a className="download-link" href="/Diploma.pdf" download>
+          <a className="download-link" href="/Diplomado_Python_Ciencia_Datos_Fabian_Cerpa.pdf" download>
             <FaDownload />
           </a>
         </div>

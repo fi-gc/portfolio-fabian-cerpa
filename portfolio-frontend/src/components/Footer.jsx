@@ -10,7 +10,7 @@ const Footer = () => (
       </div>
       
       <div className="icons">
-        <a href="https://github.com/fabiancerpa" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <a href="https://github.com/fi-gc/portfolio-fabian-cerpa" target="_blank" rel="noopener noreferrer" title="GitHub">
           <FaGithub size={20} />
         </a>
         <a href="https://www.linkedin.com/in/fabian-gonzalez-cerpa" target="_blank" rel="noopener noreferrer" title="LinkedIn">

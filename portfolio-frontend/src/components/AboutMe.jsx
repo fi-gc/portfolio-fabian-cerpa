@@ -19,6 +19,12 @@ const AboutMe = () => {
             completamente responsiva y optimizada para diferentes dispositivos.
           </p>
           <p>
+            <strong>Despliegue profesional:</strong> El frontend está desplegado en <strong>Vercel</strong> y el backend en <strong>Railway</strong>, permitiendo alta disponibilidad y acceso global. Se configuraron variables de entorno seguras y un sistema avanzado de CORS para permitir la integración entre ambos entornos y el desarrollo local.
+          </p>
+          <p>
+            <strong>Documentos descargables:</strong> Los archivos de CV, certificado de título y diplomado han sido renombrados con nombres profesionales y descriptivos para facilitar su identificación y descarga.
+          </p>
+          <p>
             <strong>Base de datos en la nube:</strong> Los datos de los snippets se almacenan en una base de datos PostgreSQL gestionada por Supabase, una plataforma cloud gratuita y escalable, lo que permite que el portafolio esté siempre disponible y preparado para producción y despliegue en cualquier hosting.
           </p>
         </div>
