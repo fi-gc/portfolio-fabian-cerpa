@@ -5,8 +5,17 @@ const techTags = [
   "Python",
   "Java",
   "C#",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "PHP",
   "SQL",
-  "GIT"
+  "PL/SQL",
+  "Microsoft SQL Server",
+  "Git",
+  "GitHub",
+  "GitLab",
 ];
 
 const Header = ({ onTechSelect, selectedTech }) => {
